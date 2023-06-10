@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1 style="color: blue;"></h1>
+<div class="dashboard">
+    <div class="dashboard">
+        <hr>
+        <hr>
+        <h1>GPS TRACKER</h1>
+        <p>Bintang Pitanta Sunjaya (2010314049)</p>
+        <hr>
+        <hr>
+    </div>
+</div>
+
+<body>
+    <script>
+        fetch("https://precious-loafers-tuna.cyclic.app/location/get-by-id", {
+            method: "POST",
+            body: JSON.stringify({ id: "648467b37b0ed93a011e5eb8" }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((res) => res.json().then((data) => {
+            const longitudeText = document.getElementById("longitude")
+            const latitudeText = document.getElementById("latitude")
+            const timeText = document.getElementById("time")
+            const mapsLinkText = document.getElementById("mapsLink")
+
+            longitudeText.innerHTML = data.longitude
+            latitudeText.innerHTML = data.latitude
+            timeText.innerHTML = data.time
+            mapsLinkText.innerHTML = data.mapsLink
+        }))
+    </script>
+    <div class="dashboard">
+        <div class="dashboard">
+            <h1 class="Mydashboard">My Dashboard</h1>
+
+            <table>
+                <tr>
+                    <th>Longitude</th>
+                    <td id="longitude">0</td>
+                </tr>
+                <tr>
+                    <th>Latitude</th>
+                    <td id="latitude">0</td>
+                </tr>
+                <tr>
+                    <th>Timestamp</th>
+                    <td id="time"></td>
+                </tr>
+                <tr>
+                    <th>Google Maps Link</th>
+                    <td id="mapsLink"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

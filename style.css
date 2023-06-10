@@ -1,0 +1,24 @@
+head {
+    width:1000px;
+    margin:auto;
+    font-size: 60px;
+    padding: 30px;
+}
+body {
+    margin: 0;
+    padding:0;
+    fonr font-family: Arial;
+}
+table, th, td{
+    width:800px;
+    margin:auto;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+.Mydashboard{
+    width: 100vw;
+    margin: auto;
+}
