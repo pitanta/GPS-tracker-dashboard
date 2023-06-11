@@ -1,24 +1,29 @@
 head {
     width:1000px;
     margin:auto;
-    font-size: 60px;
+    font-size: 50px;
     padding: 30px;
+    text-align: center;
 }
 body {
     margin: 0;
     padding:0;
-    fonr font-family: Arial;
+    font-family: Arial;
+    text-align: center;
 }
 table, th, td{
-    width:800px;
+    width:1000px;
     margin:auto;
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
     text-align: center;
     border: 2px solid #000;
     border-collapse: collapse;
 }
-.Mydashboard{
-    width: 100vw;
-    margin: auto;
+button{
+    width:auto;
+    margin: 10px;;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
